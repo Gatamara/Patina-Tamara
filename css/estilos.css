@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Roboto'; }
+  body header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 80px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px; }
+    body header nav {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      body header nav ul {
+        list-style: none; }
+        body header nav ul a {
+          color: white;
+          text-decoration: none;
+          letter-spacing: 5px; }
+          body header nav ul a:hover {
+            color: #0d6efd; }
+        body header nav ul li {
+          display: inline;
+          margin: 0 28px; }
+
+.bajo-index h2 {
+  text-align: center;
+  margin: 20px 0px; }
+
+.bajo-index .container {
+  margin: 25px; }
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100vh; }
+  .overlay .filtros {
+    color: #FFFFFF;
+    padding: 0px 60px; }
+    .overlay .filtros h5 {
+      margin: 20px 0px 10px 0px; }
+    .overlay .filtros h6 {
+      margin: 20px 0px 10px 0px; }
+    .overlay .filtros button {
+      margin: 20px 0px; }
+
+.img-spot {
+  max-width: 100%; }
+
+.order-container {
+  padding: 20px; }
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  margin: 20px; }
+
+.container-dos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas: "titulo-grande titulo-grande titulo-grande" "texto-izquierdo imagen-central texto-derecho" "imagen-descarga imagen-descarga imagen-descarga";
+  background-image: url(../recursos/bg-degrade.png);
+  padding-top: 20px; }
+  .container-dos .titulo-grande {
+    grid-area: titulo-grande;
+    text-align: center;
+    margin-bottom: 20px; }
+  .container-dos .texto-izquierdo {
+    grid-area: texto-izquierdo;
+    text-align: right;
+    align-self: center;
+    justify-self: stretch;
+    padding: 20px;
+    margin-left: 200px; }
+    .container-dos .texto-izquierdo p {
+      margin: 40px 0px 40px 40px; }
+  .container-dos .imagen-central {
+    grid-area: imagen-central;
+    justify-self: center; }
+  .container-dos .texto-derecho {
+    grid-area: texto-derecho;
+    align-self: center;
+    justify-self: stretch;
+    padding: 20px;
+    margin-right: 200px; }
+    .container-dos .texto-derecho p {
+      margin: 40px 40px 40px 0px; }
+  .container-dos .imagen-descarga {
+    grid-area: imagen-descarga;
+    justify-self: center; }
+
+main {
+  background-image: url(../recursos/skate-img1.jpg);
+  background-size: cover; }
+
+.contacto {
+  display: grid;
+  grid-template-columns: 1.4fr 1.4fr;
+  grid-template-rows: 0.7fr 0.3fr 0.7fr 2.3fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 13px 19px;
+  padding: 40px;
+  margin: 0px 45px 0px 45px; }
+  .contacto .titulo-contacto {
+    grid-area: 1 / 1 / 2 / 3;
+    justify-self: center;
+    text-align: center;
+    padding-bottom: 20px;
+    letter-spacing: 5px; }
+    .contacto .titulo-contacto h1 {
+      margin-bottom: 20px; }
+  .contacto .name {
+    grid-area: 2 / 1 / 3 / 2;
+    justify-self: inherit;
+    margin: 0px 0px 0px 250px; }
+    .contacto .name .form-contact-input {
+      width: 100%;
+      color: white;
+      font-size: 18px;
+      background-color: #464646;
+      border: 1px solid #464646;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      height: 40px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #464646;
+      border-left: 1px solid #464646;
+      text-indent: 20px;
+      font-family: "roboto"; }
+  .contacto .email {
+    grid-area: 2 / 2 / 3 / 3;
+    justify-self: inherit;
+    margin: 0px 250px 0px 0px; }
+    .contacto .email .form-contact-input {
+      width: 100%;
+      color: white;
+      font-size: 18px;
+      background-color: #464646;
+      border: 1px solid #464646;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      height: 40px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #464646;
+      border-left: 1px solid #464646;
+      text-indent: 20px;
+      font-family: "roboto"; }
+  .contacto .asunto {
+    grid-area: 3 / 1 / 4 / 3;
+    justify-self: inherit;
+    margin: 0px 250px; }
+    .contacto .asunto .form-contact-input {
+      width: 100%;
+      color: white;
+      font-size: 18px;
+      background-color: #464646;
+      border: 1px solid #464646;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      height: 40px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #464646;
+      border-left: 1px solid #464646;
+      text-indent: 20px;
+      font-family: "roboto"; }
+  .contacto .escribe-aqui {
+    grid-area: 4 / 1 / 5 / 3;
+    justify-self: inherit;
+    margin: 0px 250px; }
+    .contacto .escribe-aqui .form-contact-textarea {
+      width: 100%;
+      color: white;
+      font-size: 18px;
+      background-color: #464646;
+      border: 1px solid #464646;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      height: 200px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #464646;
+      border-left: 1px solid #464646;
+      text-indent: 20px;
+      font-family: "roboto"; }
+  .contacto .enviar {
+    grid-area: 5 / 1 / 6 / 3;
+    justify-self: center;
+    font-family: "roboto"; }
+    .contacto .enviar .button {
+      background-color: #5e5e5e;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      transition: all 2s; }
+      .contacto .enviar .button:hover {
+        background-color: black;
+        transform: skewX(20deg); }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("fonts/Roboto-Light.ttf");
+  font-style: normal;
+  font-weight: 300; }
+
+.main-tres {
+  background-image: url(../recursos/skate-img2.jpg);
+  background-size: cover; }
+  .main-tres .titulo-nosotros {
+    margin: 25px;
+    text-align: center;
+    padding: 0px 200px 0px 200px;
+    font-size: 22px;
+    letter-spacing: 2px; }
+    .main-tres .titulo-nosotros h3 {
+      padding-bottom: 25px;
+      padding-top: 25px;
+      letter-spacing: 2px; }
+    .main-tres .titulo-nosotros h2 {
+      padding: 25px 0px 25px 0px; }
+  .main-tres .img-abajo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    padding: 50px; }
+    .main-tres .img-abajo .box {
+      display: grid;
+      padding: 40px;
+      font-size: 100%;
+      justify-items: center;
+      text-align: center;
+      letter-spacing: 2px; }
+      .main-tres .img-abajo .box img {
+        padding: 40px; }
+    .main-tres .img-abajo h3 {
+      padding: 20px;
+      letter-spacing: 3px; }

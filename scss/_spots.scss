@@ -1,0 +1,25 @@
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    min-height: 100vh;
+    .filtros {
+        color: #FFFFFF;
+        padding: 0px 60px;
+        h5 {
+            margin: 20px 0px 10px 0px;
+        }
+        h6 {
+            margin: 20px 0px 10px 0px;
+        }
+        button {
+            margin: 20px 0px;
+        }
+    }
+}
+
+.img-spot {
+    max-width: 100%;
+}
+
+.order-container {
+    padding: 20px;
+}

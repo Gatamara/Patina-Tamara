@@ -1,0 +1,43 @@
+.container-dos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas: "titulo-grande titulo-grande titulo-grande" "texto-izquierdo imagen-central texto-derecho" "imagen-descarga imagen-descarga imagen-descarga";
+    background-image: url(../recursos/bg-degrade.png);
+    padding-top: 20px;
+    .titulo-grande {
+        grid-area: titulo-grande;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .texto-izquierdo {
+        grid-area: texto-izquierdo;
+        text-align: right;
+        align-self: center;
+        justify-self: stretch;
+        padding: 20px;
+        margin-left: 200px;
+        p {
+            margin: 40px 0px 40px 40px;
+        }
+    }
+    .imagen-central {
+        grid-area: imagen-central;
+        justify-self: center;
+    }
+    .texto-derecho {
+        grid-area: texto-derecho;
+        align-self: center;
+        justify-self: stretch;
+        padding: 20px;
+        margin-right: 200px;
+        p {
+            margin: 40px 40px 40px 0px;
+        }
+    }
+    .imagen-descarga {
+        grid-area: imagen-descarga;
+        justify-self: center;
+    }
+}
