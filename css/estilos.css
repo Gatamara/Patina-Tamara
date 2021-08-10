@@ -37,8 +37,10 @@ body {
   text-align: center;
   margin: 20px 0px; }
 
-.bajo-index .container {
-  margin: 25px; }
+.bajo-index .imagen-spot {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 25px 10px 25px; }
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.7);
