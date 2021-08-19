@@ -1,11 +1,13 @@
-  .bajo-index {
-      h2 {
-          text-align: center;
-          margin: 20px 0px;
-      }
-      .imagen-spot {
-          max-width: 100%;
-          height: auto;
-          margin: 10px 25px 10px 25px;
-      }
-  }
+#spots-destacados {
+    padding-top: 10px;
+    text-align: center;
+    h1 {
+        margin: 30px 0px;
+    }
+    .imagen-spot {
+        max-width: 100%;
+        box-sizing: border-box;
+        height: auto;
+        padding: 10px 25px 10px 25px;
+    }
+}

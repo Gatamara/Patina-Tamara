@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,21 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patina - Spots</title>
     <meta name="author" content="Tamara Salinas" />
-    <meta name="keywords" content="patina skate app skater" />
-    <meta name="description" content="Busca los spots segun tus necesidades, lugar mas cercano, skatepark, ramplas, etc" />
-    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
-
-
-    <link rel="stylesheet" href="./css/estilos.css" />
+    <meta name="keywords" content="patina, skate, app ,skater, skatepark, spots " />
+    <meta name="description" content="Patina un sitio web para buscar spots para andar en skate " />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/estilos.css" rel="stylesheet" />
 
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img class="img-logo-navbar" src="./img/logo-navbar.png" alt="">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-logo-navbar" src="assets/img/logo-navbar.png" alt="Logo Patina">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,165 +28,164 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            <a class="nav-link" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./spots.html">Spots</a>
+                            <a class="nav-link active" aria-current="page" href="spots.html">Spots</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./appmovil.html">App Movil</a>
+                            <a class="nav-link" href="appmovil.html">App Movil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
+
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <main>
+        <section id="spots">
 
-        <div class="container-fluid overlay">
-
-            <div class="row">
-                <div class="col-3 offset-9 order-container">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Ordenar por</option>
-                        <option value="1">Fecha de creación</option>
-                        <option value="2">Distancia</option>
-                      </select>
-                </div>
-                <div class="col-3 filtros">
-                    <h5>Filtros</h5>
-                    <h6>Tipo de Spot</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Skatepark
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Street
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Vert
-                        </label>
-                    </div>
-                    <h6>Distancia</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          0 - 1 KM
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            1 - 10 KM
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          Mas de 10 KM
-                        </label>
-                    </div>
-                    <h6>Obstaculos</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Escalera
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Baranda
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Muro
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Piramide
-                        </label>
-                    </div>
-                    <h6>Adicionales</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Sin guardia
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Entorno seguro
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Abierto ahora
-                        </label>
-                    </div>
-
-                    <button class="btn btn-light">
-Aplicar filtros
-                    </button>
-                </div>
-                <div class="col-9">
-                    <div class="row">
-                        <div class="col-4">
-                            <img class="img-spot" src="./recursos/overlay-img.png" />
-                        </div>
-                        <div class="col-4">
-                            <img class="img-spot" src="./recursos/overlay-img.png" />
-                        </div>
-                        <div class="col-4">
-                            <img class="img-spot" src="./recursos/overlay-img.png" />
-                        </div>
-                        <div class="col-4">
-                            <img class="img-spot" src="./recursos/overlay-img.png" />
-                        </div>
-                        <div class="col-4">
-                            <img class="img-spot" src="./recursos/overlay-img.png" />
-                        </div>
-                        <div class="col-4">
-                            <img class="img-spot" src="./recursos/overlay-img.png" />
-                        </div>
-
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 offset-sm-9 order-container">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Ordenar por</option>
+                            <option value="1">Fecha de creación</option>
+                            <option value="2">Distancia</option>
+                        </select>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3 filtros">
+                        <h5>Filtros</h5>
+                        <h6>Tipo de Spot</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Skatepark
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Street
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Vert
+                            </label>
+                        </div>
+                        <h6>Distancia</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              0 - 1 KM
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                1 - 10 KM
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Mas de 10 KM
+                            </label>
+                        </div>
+                        <h6>Obstaculos</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Escalera
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Baranda
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Muro
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Piramide
+                            </label>
+                        </div>
+                        <h6>Adicionales</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Sin guardia
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Entorno seguro
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Abierto ahora
+                            </label>
+                        </div>
+
+                        <button class="btn btn-light">Aplicar filtros </button>
+                    </div>
+                    <div class="col-xs-12 col-sm-9">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+                                <img class="img-spot" src="assets/img/overlay-img.png" />
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img class="img-spot" src="assets/img/overlay-img.png" />
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img class="img-spot" src="assets/img/overlay-img.png" />
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img class="img-spot" src="assets/img/overlay-img.png" />
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img class="img-spot" src="assets/img/overlay-img.png" />
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img class="img-spot" src="assets/img/overlay-img.png" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
 
-        </div>
 
-        </div>
-
+        </section>
     </main>
-
-    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-    <footer class="footer">
-        <div>
-            <p>Sitio Web hecho por Tamara Salinas</p>
-        </div>
-
+    <footer>
+        <p>Sitio Web hecho por Tamara Salinas</p>
     </footer>
 
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

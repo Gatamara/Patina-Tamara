@@ -1,0 +1,9 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto';
+}
+
+section:not(#slider) {
+    padding: 60px 0;
+}

@@ -1,10 +1,10 @@
-.container-dos {
+section#app-movil {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px 10px;
     grid-auto-flow: row;
     grid-template-areas: "titulo-grande titulo-grande titulo-grande" "texto-izquierdo imagen-central texto-derecho" "imagen-descarga imagen-descarga imagen-descarga";
-    background-image: url(../recursos/bg-degrade.png);
+    background-image: url(../img/bg-degrade.png);
     padding-top: 20px;
     .titulo-grande {
         grid-area: titulo-grande;
@@ -19,7 +19,7 @@
         padding: 20px;
         margin-left: 200px;
         p {
-            margin: 40px 0px 40px 40px;
+            margin: 20px 0px 40px 40px;
         }
     }
     .imagen-central {
@@ -33,7 +33,7 @@
         padding: 20px;
         margin-right: 200px;
         p {
-            margin: 40px 40px 40px 0px;
+            margin: 20px 40px 40px 0px;
         }
     }
     .imagen-descarga {

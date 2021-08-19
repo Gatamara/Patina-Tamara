@@ -1,18 +1,16 @@
 {
-    "name": "patina",
+    "name": "patina-web",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "dependencies": {
-        "node-sass": "^6.0.1",
-        "nodemon": "^2.0.12"
-    },
-    "devDependencies": {},
+    "description": "Aplicacion web de Patina",
+    "main": "index.html",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build-css": "node-sass --include-path scss scss/main.scss css/estilos.css",
+        "build-css": "node-sass --include-path scss scss/main.scss assets/css/estilos.css",
         "watch-css": "nodemon -e scss -x \"npm run build-css\""
     },
-    "author": "",
-    "license": "ISC"
+    "author": "Tamara Salinas",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^6.0.1",
+        "nodemon": "^2.0.12"
+    }
 }

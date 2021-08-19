@@ -1,5 +1,8 @@
-.footer {
-    padding: 10px;
+footer {
+    background-color: $footer-bg-color;
     text-align: center;
-    margin: 20px;
+    padding: 20px;
+    p {
+        margin: 0!important;
+    }
 }
