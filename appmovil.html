@@ -9,21 +9,41 @@
     <meta name="author" content="Tamara Salinas" />
     <meta name="keywords" content="patina skate app skater" />
     <meta name="description" content="Cuando tengas PATINA descargada en tu celular podrás realizar las siguientes acciones." />
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css" />
 </head>
 
 <body>
     <div>
         <header class="header">
-            <img src="./img/logo-navbar.png" />
-            <nav class="nav">
-                <ul class="barraMenu">
-                    <li class="item-menu"><a href="index.html">Inicio</a> </li>
-                    <li class="item-menu"><a href="spots.html">Spots</a></li>
-                    <li class="item-menu"><a href="appmovil.html">App Movil</a></li>
-                    <li class="item-menu"><a href="nosotros.html">Nosotros</a></li>
-                    <li class="item-menu"><a href="contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img class="img-logo-navbar" src="./img/logo-navbar.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./spots.html">Spots</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./appmovil.html">App Movil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
 
@@ -71,6 +91,7 @@
 
 
         </main>
+        <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
         <footer class="footer">
             <div>
                 <p>Sitio Web hecho por Tamara Salinas</p>
