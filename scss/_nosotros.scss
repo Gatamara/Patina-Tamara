@@ -18,7 +18,7 @@ section#nosotros {
     }
     .img-abajo {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         grid-gap: 50px;
         padding: 50px;
         .box {
@@ -35,6 +35,33 @@ section#nosotros {
         h3 {
             padding: 20px;
             letter-spacing: 3px;
+        }
+    }
+}
+
+@media(max-width: $breakpoint-xs) {
+    section#nosotros {
+        .titulo-nosotros {
+            font-size: 12px;
+            padding: 0;
+        }
+    }
+}
+
+@media(max-width: $breakpoint-sm) {
+    section#nosotros {
+        .titulo-nosotros {
+            font-size: 18px;
+            padding: 0;
+        }
+    }
+}
+
+@media(max-width: $breakpoint-md) {
+    section#nosotros {
+        .titulo-nosotros {
+            font-size: 18px;
+            padding: 5px;
         }
     }
 }

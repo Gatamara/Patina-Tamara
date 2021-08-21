@@ -136,7 +136,7 @@ section#nosotros {
       padding: 25px 0px 25px 0px; }
   section#nosotros .img-abajo {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 50px;
     padding: 50px; }
     section#nosotros .img-abajo .box {
@@ -151,6 +151,21 @@ section#nosotros {
     section#nosotros .img-abajo h3 {
       padding: 20px;
       letter-spacing: 3px; }
+
+@media (max-width: 575px) {
+  section#nosotros .titulo-nosotros {
+    font-size: 12px;
+    padding: 0; } }
+
+@media (max-width: 767px) {
+  section#nosotros .titulo-nosotros {
+    font-size: 18px;
+    padding: 0; } }
+
+@media (max-width: 991px) {
+  section#nosotros .titulo-nosotros {
+    font-size: 18px;
+    padding: 5px; } }
 
 section#contacto {
   background-image: url(../img/skate-img1.jpg);
