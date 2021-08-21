@@ -1,11 +1,10 @@
-section#app-movil {
+/* section#app-movil {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px 10px;
-    grid-auto-flow: row;
     grid-template-areas: "titulo-grande titulo-grande titulo-grande" "texto-izquierdo imagen-central texto-derecho" "imagen-descarga imagen-descarga imagen-descarga";
     background-image: url(../img/bg-degrade.png);
     padding-top: 20px;
+    width: 100vw;
     .titulo-grande {
         grid-area: titulo-grande;
         text-align: center;
@@ -39,5 +38,33 @@ section#app-movil {
     .imagen-descarga {
         grid-area: imagen-descarga;
         justify-self: center;
+    }
+} */
+
+main.main-app {
+    background-image: url(../assets/img/background-patina.jpg);
+    background-size: cover;
+    .titulo-grande {
+        text-align: center;
+    }
+    .imagen-descarga {
+        text-align: center;
+    }
+    section#app-movil {
+        display: grid;
+        align-items: center;
+        gap: 1rem;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        .texto-izquierdo {
+            text-align: right;
+        }
+        .imagen-central {
+            place-self: center;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
     }
 }

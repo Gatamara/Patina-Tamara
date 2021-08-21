@@ -1,7 +1,8 @@
 body {
   background-color: black;
   color: white;
-  font-family: 'Roboto'; }
+  font-family: 'Roboto';
+  box-sizing: border-box; }
 
 section:not(#slider) {
   padding: 60px 0; }
@@ -55,41 +56,68 @@ section#spots {
   section#spots .order-container {
     padding: 20px; }
 
-section#app-movil {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px 10px;
-  grid-auto-flow: row;
-  grid-template-areas: "titulo-grande titulo-grande titulo-grande" "texto-izquierdo imagen-central texto-derecho" "imagen-descarga imagen-descarga imagen-descarga";
-  background-image: url(../img/bg-degrade.png);
-  padding-top: 20px; }
-  section#app-movil .titulo-grande {
-    grid-area: titulo-grande;
-    text-align: center;
-    margin-bottom: 20px; }
-  section#app-movil .texto-izquierdo {
-    grid-area: texto-izquierdo;
-    text-align: right;
-    align-self: center;
-    justify-self: stretch;
-    padding: 20px;
-    margin-left: 200px; }
-    section#app-movil .texto-izquierdo p {
-      margin: 20px 0px 40px 40px; }
-  section#app-movil .imagen-central {
-    grid-area: imagen-central;
-    justify-self: center; }
-  section#app-movil .texto-derecho {
-    grid-area: texto-derecho;
-    align-self: center;
-    justify-self: stretch;
-    padding: 20px;
-    margin-right: 200px; }
-    section#app-movil .texto-derecho p {
-      margin: 20px 40px 40px 0px; }
-  section#app-movil .imagen-descarga {
-    grid-area: imagen-descarga;
-    justify-self: center; }
+/* section#app-movil {
+    display: grid;
+    gap: 10px 10px;
+    grid-template-areas: "titulo-grande titulo-grande titulo-grande" "texto-izquierdo imagen-central texto-derecho" "imagen-descarga imagen-descarga imagen-descarga";
+    background-image: url(../img/bg-degrade.png);
+    padding-top: 20px;
+    width: 100vw;
+    .titulo-grande {
+        grid-area: titulo-grande;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .texto-izquierdo {
+        grid-area: texto-izquierdo;
+        text-align: right;
+        align-self: center;
+        justify-self: stretch;
+        padding: 20px;
+        margin-left: 200px;
+        p {
+            margin: 20px 0px 40px 40px;
+        }
+    }
+    .imagen-central {
+        grid-area: imagen-central;
+        justify-self: center;
+    }
+    .texto-derecho {
+        grid-area: texto-derecho;
+        align-self: center;
+        justify-self: stretch;
+        padding: 20px;
+        margin-right: 200px;
+        p {
+            margin: 20px 40px 40px 0px;
+        }
+    }
+    .imagen-descarga {
+        grid-area: imagen-descarga;
+        justify-self: center;
+    }
+} */
+main.main-app {
+  background-image: url(../assets/img/background-patina.jpg);
+  background-size: cover; }
+  main.main-app .titulo-grande {
+    text-align: center; }
+  main.main-app .imagen-descarga {
+    text-align: center; }
+  main.main-app section#app-movil {
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); }
+    main.main-app section#app-movil .texto-izquierdo {
+      text-align: right; }
+    main.main-app section#app-movil .imagen-central {
+      place-self: center; }
+      main.main-app section#app-movil .imagen-central img {
+        max-width: 100%;
+        max-height: 100%; }
 
 section#nosotros {
   background-image: url(../img/patina-bg-website-v3.png);
