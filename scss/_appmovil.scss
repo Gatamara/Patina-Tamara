@@ -1,55 +1,12 @@
-/* section#app-movil {
-    display: grid;
-    gap: 10px 10px;
-    grid-template-areas: "titulo-grande titulo-grande titulo-grande" "texto-izquierdo imagen-central texto-derecho" "imagen-descarga imagen-descarga imagen-descarga";
-    background-image: url(../img/bg-degrade.png);
-    padding-top: 20px;
-    width: 100vw;
-    .titulo-grande {
-        grid-area: titulo-grande;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .texto-izquierdo {
-        grid-area: texto-izquierdo;
-        text-align: right;
-        align-self: center;
-        justify-self: stretch;
-        padding: 20px;
-        margin-left: 200px;
-        p {
-            margin: 20px 0px 40px 40px;
-        }
-    }
-    .imagen-central {
-        grid-area: imagen-central;
-        justify-self: center;
-    }
-    .texto-derecho {
-        grid-area: texto-derecho;
-        align-self: center;
-        justify-self: stretch;
-        padding: 20px;
-        margin-right: 200px;
-        p {
-            margin: 20px 40px 40px 0px;
-        }
-    }
-    .imagen-descarga {
-        grid-area: imagen-descarga;
-        justify-self: center;
-    }
-} */
-
 main.main-app {
-    background-image: url(../assets/img/background-patina.jpg);
+    background-image: url(../img/skate-img1.jpg);
     background-size: cover;
     .titulo-grande {
         text-align: center;
     }
-    .imagen-descarga {
+    /* .imagen-descarga {
         text-align: center;
-    }
+    } */
     section#app-movil {
         display: grid;
         align-items: center;
@@ -64,6 +21,28 @@ main.main-app {
             img {
                 max-width: 100%;
                 max-height: 100%;
+            }
+        }
+        .imagen-descarga {
+            place-self: center;
+            img {
+                max-width: 100%;
+            }
+        }
+        @media(max-width: $breakpoint-md) {
+            .texto-izquierdo {
+                text-align: center;
+            }
+            .texto-derecho {
+                text-align: center;
+            }
+        }
+    }
+    @media(max-width: $breakpoint-sm) {
+        .imagen-descarga {
+            place-self: center;
+            img {
+                max-width: 100%;
             }
         }
     }
