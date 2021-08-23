@@ -12,7 +12,7 @@ main.main-app {
         align-items: center;
         gap: 1rem;
         grid-auto-rows: auto;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         .texto-izquierdo {
             text-align: right;
         }

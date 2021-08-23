@@ -69,7 +69,7 @@ main.main-app {
     align-items: center;
     gap: 1rem;
     grid-auto-rows: auto;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); }
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); }
     main.main-app section#app-movil .texto-izquierdo {
       text-align: right; }
     main.main-app section#app-movil .imagen-central {
@@ -92,53 +92,43 @@ main.main-app {
       main.main-app .imagen-descarga img {
         max-width: 100%; } }
 
-section#nosotros {
+main {
   background-image: url(../img/patina-bg-website-v3.png);
   background-size: cover; }
-  section#nosotros .titulo-nosotros {
-    margin: 25px;
+  main section#nosotros .titulo-nosotros {
     text-align: center;
-    padding: 0px 200px 0px 200px;
+    padding: 0px 100px 0px 100px;
     font-size: 22px;
     letter-spacing: 2px; }
-    section#nosotros .titulo-nosotros h3 {
-      padding-bottom: 25px;
-      padding-top: 25px;
+    main section#nosotros .titulo-nosotros h3 {
+      padding-bottom: 20px;
       letter-spacing: 2px; }
-    section#nosotros .titulo-nosotros h2 {
+    main section#nosotros .titulo-nosotros h2 {
       padding: 25px 0px 25px 0px; }
-  section#nosotros .img-abajo {
+  main section#nosotros .img-abajo {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 50px;
-    padding: 50px; }
-    section#nosotros .img-abajo .box {
-      display: grid;
-      padding: 40px;
-      font-size: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 40px;
+    justify-content: center; }
+    main section#nosotros .img-abajo .box {
       justify-items: center;
       text-align: center;
       letter-spacing: 2px; }
-      section#nosotros .img-abajo .box img {
-        padding: 40px; }
-    section#nosotros .img-abajo h3 {
-      padding: 20px;
+      main section#nosotros .img-abajo .box img {
+        max-width: 100%; }
+    main section#nosotros .img-abajo h3 {
       letter-spacing: 3px; }
-
-@media (max-width: 575px) {
-  section#nosotros .titulo-nosotros {
-    font-size: 12px;
-    padding: 0; } }
-
-@media (max-width: 767px) {
-  section#nosotros .titulo-nosotros {
-    font-size: 18px;
-    padding: 0; } }
-
-@media (max-width: 991px) {
-  section#nosotros .titulo-nosotros {
-    font-size: 18px;
-    padding: 5px; } }
+  @media (max-width: 575px) {
+    main section#nosotros .titulo-nosotros {
+      font-size: 12px;
+      padding: 0; } }
+  @media (max-width: 767px) {
+    main section#nosotros .titulo-nosotros {
+      font-size: 18px;
+      padding: 0; } }
+  @media (max-width: 991px) {
+    main section#nosotros .titulo-nosotros {
+      font-size: 18px; } }
 
 main h1,
 main p {
