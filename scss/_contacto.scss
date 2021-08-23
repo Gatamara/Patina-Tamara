@@ -6,6 +6,7 @@ main {
     section#contacto {
         background-image: url(../img/skate-img1.jpg);
         background-size: cover;
+        min-height: 100vh;
         @media(max-width: $breakpoint-xs) {
             .w-xs-100 {
                 width: 100%;

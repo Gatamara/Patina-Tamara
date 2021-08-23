@@ -1,7 +1,8 @@
-main {
+main.main-nosotros {
     background-image: url(../img/patina-bg-website-v3.png);
     background-size: cover;
     section#nosotros {
+        min-height: 100vh;
         .titulo-nosotros {
             text-align: center;
             padding: 0px 100px 0px 100px;
