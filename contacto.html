@@ -49,37 +49,45 @@
         </nav>
     </header>
     <main>
-        <section id="contacto">
-            <form action="#" method="post">
 
-                <div class="contacto">
-                    <div class="titulo-contacto">
-                        <h1>Contacto</h1>
-                        <p>Si necesitas ponerte en contacto con nosotros dejanos un mensaje y lo responderemos a la brevedad.</p>
+        <section id="contacto" class=" ">
+            <h1>Contacto</h1>
+            <p>
+                Si necesitas ponerte en contacto con nosotros dejanos un mensaje y lo responderemos a la brevedad.</p>
+            <div class="container">
+                <form action="#">
+                    <div class="row ">
+                        <div class="col-xs-12 col-sm-6 p-2 ">
+                            <input type="text" class="form-control" placeholder="Ingresa tu nombre" aria-label="ingresa tu nombre">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 p-2 ">
+                            <input type="text" class="form-control" placeholder="Ingresa tu mail" aria-label="ingresa tu apellido">
+                        </div>
+                        <div class="col-12 p-2">
+                            <input type="text" class="form-control" placeholder="Asunto" aria-label="ingresa tu apellido">
+
+                        </div>
+                        <div class="col-12 p-2">
+
+                            <textarea class="form-control" placeholder="Escriba aqui" id="floatingTextarea2" style="height: 100px"></textarea>
+
+
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6 p-2 ">
+                            <button class="btn btn-secondary float-sm-end w-xs-100">Enviar</button>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 p-2">
+                            <button class="btn btn-secondary w-xs-100">Borrar</button>
+                        </div>
                     </div>
-                    <div class="name">
-                        <label for="nombre"> </label>
-                        <input type="text" class="form-contact-input" name="nombre" id="nombre" placeholder="Ingresa tu nombre" />
-                    </div>
-                    <div class="email">
-                        <label for="email"> </label>
-                        <input type="email" class="form-contact-input" name="email" id="email" placeholder="Ingrese su email" />
-                    </div>
-                    <div class="asunto">
-                        <label for="asunto"> </label>
-                        <input type="text" class="form-contact-input" name="asunto" id="asunto" placeholder="asunto" />
-                    </div>
-                    <div class="escribe-aqui">
-                        <textarea name="textarea" class="form-contact-textarea" rows="10" cols="50" placeholder="Escribe aqui"></textarea>
-                    </div>
-                    <div class="enviar">
-                        <button class="button " type="submit">Enviar</button>
-                        <button class="button " type="reset">Reset</button>
-                        <!-- <input type="submit"> -->
-                        <!-- <input type="reset"> -->
-                    </div>
-                </div>
-            </form>
+                </form>
+
+
+
+            </div>
+
+
         </section>
     </main>
 
