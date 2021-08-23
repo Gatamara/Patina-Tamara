@@ -58,17 +58,18 @@ section#spots {
 
 main.main-app {
   background-image: url(../img/skate-img1.jpg);
-  background-size: cover;
-  /* .imagen-descarga {
-        text-align: center;
-    } */ }
+  background-size: cover; }
   main.main-app .titulo-grande {
     text-align: center; }
+  main.main-app .imagen-descarga {
+    text-align: center; }
+    main.main-app .imagen-descarga img {
+      max-width: 100%; }
   main.main-app section#app-movil {
     display: grid;
     align-items: center;
-    gap: 1rem;
-    grid-auto-rows: auto;
+    gap: 2rem;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); }
     main.main-app section#app-movil .texto-izquierdo {
       text-align: right; }
@@ -77,20 +78,15 @@ main.main-app {
       main.main-app section#app-movil .imagen-central img {
         max-width: 100%;
         max-height: 100%; }
-    main.main-app section#app-movil .imagen-descarga {
-      place-self: center; }
-      main.main-app section#app-movil .imagen-descarga img {
-        max-width: 100%; }
     @media (max-width: 991px) {
       main.main-app section#app-movil .texto-izquierdo {
         text-align: center; }
       main.main-app section#app-movil .texto-derecho {
         text-align: center; } }
-  @media (max-width: 767px) {
-    main.main-app .imagen-descarga {
-      place-self: center; }
-      main.main-app .imagen-descarga img {
-        max-width: 100%; } }
+    @media (max-width: 575px) {
+      main.main-app section#app-movil section#app-movil {
+        font-size: 12px;
+        padding: 0; } }
 
 main {
   background-image: url(../img/patina-bg-website-v3.png);

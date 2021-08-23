@@ -4,14 +4,17 @@ main.main-app {
     .titulo-grande {
         text-align: center;
     }
-    /* .imagen-descarga {
+    .imagen-descarga {
         text-align: center;
-    } */
+        img {
+            max-width: 100%;
+        }
+    }
     section#app-movil {
         display: grid;
         align-items: center;
-        gap: 1rem;
-        grid-auto-rows: auto;
+        gap: 2rem;
+        justify-content: center;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         .texto-izquierdo {
             text-align: right;
@@ -23,12 +26,6 @@ main.main-app {
                 max-height: 100%;
             }
         }
-        .imagen-descarga {
-            place-self: center;
-            img {
-                max-width: 100%;
-            }
-        }
         @media(max-width: $breakpoint-md) {
             .texto-izquierdo {
                 text-align: center;
@@ -37,12 +34,10 @@ main.main-app {
                 text-align: center;
             }
         }
-    }
-    @media(max-width: $breakpoint-sm) {
-        .imagen-descarga {
-            place-self: center;
-            img {
-                max-width: 100%;
+        @media(max-width: $breakpoint-xs) {
+            section#app-movil {
+                font-size: 12px;
+                padding: 0;
             }
         }
     }
