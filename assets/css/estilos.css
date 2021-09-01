@@ -83,11 +83,42 @@ section#spots {
       margin: 20px 0px 10px 0px; }
     section#spots .filtros button {
       margin: 20px 0px; }
-  section#spots .img-spot {
-    max-width: 100%;
-    margin: 10px 0; }
   section#spots .order-container {
     padding: 20px; }
+  section#spots .spot-item {
+    display: inline-block;
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin-bottom: 10px; }
+    section#spots .spot-item .spot-content {
+      position: relative;
+      width: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      border-radius: 20px; }
+      section#spots .spot-item .spot-content .spot-img {
+        display: flex;
+        max-height: 330px;
+        border-radius: 20px 100px;
+        overflow: hidden;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        justify-content: center;
+        align-items: center; }
+        section#spots .spot-item .spot-content .spot-img .img {
+          width: 100%;
+          height: 100%; }
+    section#spots .spot-item .spot-info {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 10px;
+      box-sizing: border-box;
+      color: black; }
+  @media (min-width: 991px) {
+    section#spots .spot-item {
+      margin: 10px 10px; } }
 
 main.main-app {
   background-image: url(../img/skate-img1.jpg);
