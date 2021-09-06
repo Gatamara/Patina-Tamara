@@ -44,28 +44,45 @@ header {
     border-radius: 20px;
     margin-bottom: 10px; }
     #spots-destacados .spot-item .spot-content {
-      position: relative;
-      width: 100%;
       border: 1px solid rgba(0, 0, 0, 0.5);
-      border-radius: 20px; }
+      border-radius: 20px;
+      cursor: pointer; }
       #spots-destacados .spot-item .spot-content .spot-img {
         display: flex;
+        position: relative;
         max-height: 330px;
         border-radius: 20px 100px;
         overflow: hidden;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         justify-content: center;
         align-items: center; }
-        #spots-destacados .spot-item .spot-content .spot-img .img {
-          width: 100%;
-          height: 100%; }
+        #spots-destacados .spot-item .spot-content .spot-img .spot-hover {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: rgba(207, 37, 43, 0.5);
+          transition: visibility 0s, opacity 0.5s ease; }
+          #spots-destacados .spot-item .spot-content .spot-img .spot-hover img {
+            height: 80%; }
+        #spots-destacados .spot-item .spot-content .spot-img:hover .spot-hover {
+          visibility: visible;
+          opacity: 1; }
     #spots-destacados .spot-item .spot-info {
       display: flex;
       width: 100%;
       justify-content: space-between;
-      padding: 10px;
+      padding: 15px 10px 10px 10px;
       box-sizing: border-box;
-      color: black; }
+      color: black;
+      font-size: 1.3em; }
+      #spots-destacados .spot-item .spot-info .spot-tipo {
+        color: #CF252B;
+        font-family: "Roboto";
+        font-weight: 900; }
 
 @media (min-width: 991px) {
   .spot-item {
@@ -92,30 +109,47 @@ section#spots {
     width: 100%;
     background: #FFFFFF;
     border-radius: 20px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    text-align: center; }
     section#spots .spot-item .spot-content {
-      position: relative;
-      width: 100%;
       border: 1px solid rgba(0, 0, 0, 0.5);
-      border-radius: 20px; }
+      border-radius: 20px;
+      cursor: pointer; }
       section#spots .spot-item .spot-content .spot-img {
         display: flex;
+        position: relative;
         max-height: 330px;
         border-radius: 20px 100px;
         overflow: hidden;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         justify-content: center;
         align-items: center; }
-        section#spots .spot-item .spot-content .spot-img .img {
-          width: 100%;
-          height: 100%; }
+        section#spots .spot-item .spot-content .spot-img .spot-hover {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: rgba(207, 37, 43, 0.5);
+          transition: visibility 0s, opacity 0.5s ease; }
+          section#spots .spot-item .spot-content .spot-img .spot-hover img {
+            height: 80%; }
+        section#spots .spot-item .spot-content .spot-img:hover .spot-hover {
+          visibility: visible;
+          opacity: 1; }
     section#spots .spot-item .spot-info {
       display: flex;
       width: 100%;
       justify-content: space-between;
-      padding: 10px;
+      padding: 15px 10px 10px 10px;
       box-sizing: border-box;
       color: black; }
+      section#spots .spot-item .spot-info .spot-tipo {
+        color: #CF252B;
+        font-weight: 900;
+        font-family: 'Roboto' !important; }
   @media (min-width: 991px) {
     section#spots .spot-item {
       margin: 10px 10px; } }
@@ -204,9 +238,20 @@ main section#contacto {
     main section#contacto .w-xs-100 {
       width: 100%; } }
 
-footer {
+.footer {
   background-color: #212121;
-  text-align: center;
-  padding: 20px; }
-  footer p {
+  display: inline-flex;
+  padding: 5px 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+  .footer p {
     margin: 0 !important; }
+  .footer .social-media {
+    padding: 0;
+    list-style: none;
+    margin: 1em; }
+    .footer .social-media li {
+      display: inline-block;
+      margin: 0.15em;
+      padding: 0 20px; }
